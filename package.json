@@ -1,0 +1,32 @@
+{
+    "name": "artcollab",
+    "version": "0.0.0",
+    "description": "Project for SberHub (Kzn). Art space for users where they can share inspiration. ",
+    "main": "./src/index.tsx",
+    "scripts": {
+        "test": "test",
+        "start": "brojs server --port=8099 --with-open-browser",
+        "build": "npm run clean && brojs build --dev",
+        "build:prod": "npm run clean && brojs build",
+        "clean": "rimraf dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Yarik091121/artcollab.git"
+    },
+    "keywords": [
+        "artcollab"
+    ],
+    "author": "CreativeAssociate",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Yarik091121/artcollab/issues"
+    },
+    "homepage": "https://github.com/Yarik091121/artcollab#readme",
+    "dependencies": {
+        "@brojs/cli": "^1.6.3",
+        "express": "^4.19.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    }
+}
