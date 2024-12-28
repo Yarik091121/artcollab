@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import logoPng from './logo_NFT.png';
 
 const LogoStyled = styled.img`
-  width: 24px;
+  width: 96px;
   height: 24px;
   padding: 8px;
 `;

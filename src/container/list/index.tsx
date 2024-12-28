@@ -17,7 +17,7 @@ const ListPage = (): React.ReactElement => {
           </div>
         );
       })}
-    </>
+    </> 
   );
 };
 

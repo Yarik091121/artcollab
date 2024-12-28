@@ -10,6 +10,7 @@ module.exports = {
   /* use https://admin.bro-js.ru/ to create config, navigations and features */
   navigations: {
     "artcollab.main": "/artcollab",
+    "artcollab.detail": "/artcollab/:id",
   },
   features: {
     "artcollab": {
