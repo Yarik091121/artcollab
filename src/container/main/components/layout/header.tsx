@@ -6,11 +6,11 @@ import Logo from './logo/logo';
 const navigations: Array<{ name: string; href: string }> = [
   {
     name: 'Главная',
-    href: getNavigationValue('kfu-24-teacher.main')
+    href: getNavigationValue('artcollab.main')
   },
   {
     name: 'Детальная информация',
-    href: getNavigationValue('kfu-24-teacher.detail')
+    href: getNavigationValue('artcollab.detail')
   }
 ];
 

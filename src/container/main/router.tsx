@@ -7,15 +7,15 @@ import Layout from './components/layout';
 
 export const router = createBrowserRouter([
   {
-    path: getNavigationValue('kfu-24-teacher.main'),
+    path: getNavigationValue('artcollab.main'),
     element: <Layout />,
     children: [
       {
-        path: getNavigationValue('kfu-24-teacher.main'),
+        path: getNavigationValue('artcollab.main'),
         element: <ListPage />
       },
       {
-        path: getNavigationValue('kfu-24-teacher.detail'),
+        path: getNavigationValue('artcollab.detail'),
         element: <DetailPage />
       },
       { path: '*', element: <h1>404</h1> }
