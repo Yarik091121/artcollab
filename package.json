@@ -24,7 +24,7 @@
     },
     "homepage": "https://github.com/Yarik091121/artcollab#readme",
     "dependencies": {
-        "@brojs/cli": "^1.6.3",
+        "@brojs/cli": "^1.8.4",
         "@emotion/react": "^11.13.5",
         "@emotion/styled": "^11.13.5",
         "@reduxjs/toolkit": "^2.5.0",
