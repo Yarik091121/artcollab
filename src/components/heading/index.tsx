@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadingStyled } from './index.style.ts';
+import { HeadingStyled } from './index.style';
 import { HeadingProps, HeadingVariant } from './types';
 
 const Heading = ({ children, variant = HeadingVariant.h1, className }: HeadingProps) => {
