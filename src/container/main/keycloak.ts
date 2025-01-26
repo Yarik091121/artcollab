@@ -28,7 +28,14 @@ export const useKeycloak = () => {
       try {
         const authenticated = await keycloak.init({ onLoad: 'login-required' });
         if (authenticated) {
-          setToken(keycloak.token);
+          // Решить проблему ниже, чтоб не было сомнений, что значение not undefined
+          // @ts-ignore
+          if (keycloak.token === undefined) {
+            console.log('Token is undefined');
+          } else {
+            setToken(keycloak.token)
+          }
+          // setToken(keycloak.token);
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const { sub, ...user } = (await keycloak.loadUserInfo()) as any;
           console.log(user);
