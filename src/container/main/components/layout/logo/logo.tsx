@@ -3,12 +3,11 @@ import styled from '@emotion/styled';
 import logoPng from './logo_NFT.png';
 
 const LogoStyled = styled.img`
-  width: 144px;
-  height: 36px;
-  padding: 12px;
-  background-color: rgba(75, 0, 130, 0.8);
+  width: 233px;
+  height: 57px;
+  padding: 10px;
   border-radius: 5px;
-  margin-right: 10px;   
+  margin: 20px 100px 20px 100px;   
 `;
 
 // ${__webpack_public_path__}/remote-assets/logo.png

@@ -1,0 +1,175 @@
+.main-page {
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'TT Travels', sans-serif;
+    /* background-image: url("C:/Users/user/Desktop/Magistratura/Sber/src/assets/images/main_back.png"); */
+    /* делаем чтобы картинка полностью растягивалась, необязательный стиль */
+    /* background-size: 100% 100%; */
+    /* позиционирование относительно контейнера */
+    /* position: relative; */
+}
+
+.my-class {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/src/assets/images/main_back.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.title-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-market {
+    margin: 20px 0 0 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+    font-weight: 800;
+}
+
+.with-discounts {
+    margin: 0 200px 20px 0;
+    display: flex;
+    justify-content: left;
+    font-size: 120px;
+}
+
+.nft-market, .with-discounts {
+    line-height: 0.75;
+}
+
+.logo-part {
+   position: relative;
+
+}
+
+.cat-logo {
+    width: 72%;
+    height: auto;
+    padding: 12px;
+    position: absolute;
+    top: -29px;
+    left: 0px;
+}
+
+.undercat-logo {
+    width: 77%;
+    height: auto;
+    padding: 12px;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.two-buttoms {
+    display: flex;
+    justify-content: space-around left;
+    font-size: 20px;
+}
+
+.button-buy-nft {
+    background-color: #EFDA1C;
+    color: black;
+    border: none;
+    margin: 10px 0 17px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'TT Travels', sans-serif;
+}
+
+.button-galery {
+    background-color: #ffffff00;
+    color: #29E8E8;
+    border: 2px solid #29E8E8;
+    margin: 10px 40px 17px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.text-about-nft {
+    color: #29E8E8;
+    font-family: 'TT Travels', sans-serif;
+    font-size: 16px;
+    line-height: 1.45;
+    letter-spacing: -0.025em;
+    text-align: left;
+    white-space: pre;
+    margin: 0;
+}
+
+.down-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 270px 0 0;
+}
+
+
+.invis-icon {
+    margin: 34px 10px 20px;
+    position: relative;
+    width: 367px;
+    height: 330px;
+    background: none;
+    border-radius: 30px;
+}
+
+.icons {
+    margin: 115px 0px 20px;
+    position: relative;
+    width: 367px;
+    height: 214px;
+    background: linear-gradient(to right top, #1EF1F1, #E3FF30);
+    border-radius: 30px;
+}
+
+.nft-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 30px;
+}
+
+.button {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    filter: blur(25%);
+    backdrop-filter: blur(70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button::after {
+    content: '+';
+    font-size: 30px;
+    color: #FFFFFF;
+}
