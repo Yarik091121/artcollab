@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import ListPage from '../list';
+import MainPage from './components/page';
 import DetailPage from '../detail';
 import { getNavigationValue } from '@brojs/cli';
 import Layout from './components/layout';
@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: getNavigationValue('artcollab.main'),
-        element: <ListPage />
+        element: <MainPage />
       },
       {
         path: getNavigationValue('artcollab.detail'),
