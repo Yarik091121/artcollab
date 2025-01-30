@@ -47,22 +47,28 @@ const MainPage: React.FC = () => {
 
                 <div className='main-down-block'>
                     <div className="main-invis-icon">
-                        <div className="main-icons">
-                            <img src={Caban} alt="Крутой кабан" className="main-nft-icon" />
-                        </div>
                         <div className='main-button'></div>
+                        <div className='main-icons-wrapper'>
+                            <div className="main-icons">
+                                <img src={Caban} alt="Крутой кабан" className="main-nft-icon" />
+                            </div>
+                        </div>
                     </div>
                     <div className="main-invis-icon">
-                        <div className="main-icons">
-                            <img src={Monkey} alt="Крутая обезъяна" className="main-nft-icon" />
-                        </div>
                         <div className='main-button'></div>
+                        <div className="main-icons-wrapper">
+                            <div className="main-icons">
+                                <img src={Monkey} alt="Крутая обезъяна" className="main-nft-icon" />
+                            </div>
+                        </div>
                     </div>
                     <div className="main-invis-icon">
-                        <div className="main-icons">
-                            <img src={Hero} alt="Скрытный герой" className="main-nft-icon" />
-                        </div>
                         <div className='main-button'></div>
+                        <div className="main-icons-wrapper">
+                            <div className="main-icons">
+                                <img src={Hero} alt="Скрытный герой" className="main-nft-icon" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
