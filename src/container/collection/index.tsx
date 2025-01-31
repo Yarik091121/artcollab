@@ -16,24 +16,27 @@ const Collection = (): React.ReactElement => {
         <header className="collection-app-header">
             <div className="collection-icons">
             <div className="collection-icon">
-                <img src={PixelMen} alt="Image 1" />
+                <img src={PixelMen} alt="NFT with Pixel Mans" />
                 <p>Pixel Man</p>
             </div>
             <div className="collection-icon">
-                <img src={HarmonyJapan} alt="Image 2" />
+                <img src={HarmonyJapan} alt="NFT with Japans homes" />
                 <p>Harmony of Japan</p>
             </div>
             <div className="collection-icon">
-                <img src={NatureCity} alt="NFT with Pixel Mens" />
+                <img src={NatureCity} alt="NFT with nature city house" />
                 <p>Nature city</p>
             </div>
             <div className="collection-icon">
-                <img src={PixelMen} alt="Image 1" />
-                <p>Pixel Man</p>
+                <img src={PixelMen} alt="NFT with Pixel Mans" />
+                <p>Pixel Man 2</p>
             </div>
             </div>
             <div className="collection-collections">
-            <p>Ваши коллекции</p>
+            <p>Ваши коллекции:</p>
+            </div>
+            <div className='collection-answer-collections'>
+                <p>В данный момент у вас нет коллекций.</p>
             </div>
         </header>
         </div>
