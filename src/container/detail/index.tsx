@@ -41,7 +41,7 @@ const DetailPage = (): React.ReactElement => {
           <div className="bibop">Gold Rapper Bibop</div>
           <div className="price">Цена:</div>
           <div className="bibop">15 USDT</div>
-          <dif className="price">Предложения:</dif>
+          <div className="price">Предложения:</div>
           <table className="table">
             <tr>
               <th>Из</th>

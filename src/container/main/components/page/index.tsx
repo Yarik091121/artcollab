@@ -5,9 +5,14 @@ import Caban from '/src/assets/images/Kaban.png';
 import Monkey from '/src/assets/images/Monkey.png';
 import Hero from '/src/assets/images/Hero.png';
 
+
 import './index.css';
+import { Link } from 'react-router-dom';
+import { getNavigationValue } from '@brojs/cli';
 
 const MainPage: React.FC = () => {
+    const forceUpdate = React.useReducer(x => x + 1, 0)[1];
+
     return (
         <div className="main-page">
             <div className="main-page-container">
@@ -46,14 +51,17 @@ const MainPage: React.FC = () => {
                 </div>
 
                 <div className='main-down-block'>
-                    <div className="main-invis-icon">
-                        <div className='main-button'></div>
-                        <div className='main-icons-wrapper'>
-                            <div className="main-icons">
-                                <img src={Caban} alt="Крутой кабан" className="main-nft-icon" />
+                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail')}>
+                        <div className="main-invis-icon">
+                            <div className='main-button'></div>
+                            {/* <div className='main-button'></div> */}
+                            <div className='main-icons-wrapper'>
+                                <div className="main-icons">
+                                    <img src={Caban} alt="Крутой кабан" className="main-nft-icon" />
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                     <div className="main-invis-icon">
                         <div className='main-button'></div>
                         <div className="main-icons-wrapper">

@@ -25,3 +25,15 @@
 .nav-item-center {
     margin: 0 210px;
 }
+
+.header-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header-link:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(to right top, #1EF1F1, #E3FF30);
+}
