@@ -5,6 +5,7 @@ import Layout from './components/layout';
 import MainPage from './components/page';
 import DetailPage from '../detail';
 import Collection from '../collection';
+import CreateNFT from '../create-nft';
 import NotFoundPage from '../404';
 
 export const router = createBrowserRouter([
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: getNavigationValue('artcollab.collection'),
         element: <Collection />
+      },
+      {
+        path: getNavigationValue('artcollab.create-nft'),
+        element: <CreateNFT />
       },
       { 
         path: '*', 
