@@ -52,10 +52,10 @@ const MainPage: React.FC = () => {
 
                 <div className='main-down-block'>
                     <div className="main-invis-icon">
-                        {/* <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail')}>
+                        <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail')}>
                             <div className='main-button'></div>
-                        </Link> */}
-                        <div className='main-button'></div>
+                        </Link>
+                        {/* <div className='main-button'></div> */}
                         <div className='main-icons-wrapper'>
                             <div className="main-icons">
                                 <img src={Caban} alt="Крутой кабан" className="main-nft-icon" />

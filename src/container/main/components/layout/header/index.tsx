@@ -69,7 +69,7 @@ const Header = (): React.ReactElement => {
       <div className="nav-bar left-nav">
         {leftNav.map(({ name, href }) => (
           <div key={href} className="nav-item">
-            <Link onClick={() => forceUpdate()} to={href}>
+            <Link onClick={() => forceUpdate()} to={href} className='header-link'>
               {name}
             </Link>
           </div>
@@ -81,7 +81,7 @@ const Header = (): React.ReactElement => {
       <div className="nav-bar right-nav">
         {rightNav.map(({ name, href }) => (
           <div key={href} className="nav-item">
-            <Link onClick={() => forceUpdate()} to={href}>
+            <Link onClick={() => forceUpdate()} to={href} className='header-link'>
               {name}
             </Link>
           </div>
