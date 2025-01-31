@@ -11,6 +11,10 @@ const navigations: Array<{ name: string; href: string }> = [
   {
     name: 'Детальная информация',
     href: getNavigationValue('artcollab.detail')
+  },
+  {
+    name: 'Акции',
+    href: getNavigationValue('artcollab.promo')
   }
 ];
 

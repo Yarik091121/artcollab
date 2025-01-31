@@ -11,6 +11,7 @@ module.exports = {
   navigations: {
     "artcollab.main": "/artcollab",
     "artcollab.detail": "/artcollab/:id",
+    "artcollab.promo": "/artcollab/promo",
   },
   features: {
     "artcollab": {
