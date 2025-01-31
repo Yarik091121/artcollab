@@ -10,8 +10,6 @@ const LogoStyled = styled.img`
   margin: 20px 100px 20px 100px;   
 `;
 
-// ${__webpack_public_path__}/remote-assets/logo.png
-
 const Logo = () => {
   return <LogoStyled src={logoPng} alt={'logo'} />;
 };
