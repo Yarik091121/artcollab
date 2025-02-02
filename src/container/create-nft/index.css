@@ -45,12 +45,12 @@
   
   .input-field input {
     width: 70%;
-    height: calc(10px + 50%);
+    height: calc(10px + 120%);
   }
   
   .input-field button {
     width: 20%;
-    height: calc(10px + 50%);
+    height: calc(10px + 120%);
     font-weight: 700;
     color: #FFFFFF;
     border-radius: 3px;
@@ -61,6 +61,12 @@
   
 .input-field button:hover {
     box-shadow: 0 0 20px  yellow;
+}
+
+@media (max-width: 600px) {
+  .input-field {
+    margin-top: -100%;
+  }
 }
 
   .rectangle {
