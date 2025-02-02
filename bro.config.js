@@ -11,11 +11,11 @@ module.exports = {
   navigations: {
     "artcollab.main": "/artcollab",
     "artcollab.collection": "/artcollab/collection",
-    "artcollab.promo": "/artcollab/promo",
-    "artcollab.white-list": "/artcollab/white-list",
+    // "artcollab.promo": "/artcollab/promo",
+    // "artcollab.white-list": "/artcollab/white-list",
     "artcollab.create-nft": "/artcollab/create-nft",
-    "artcollab.tops": "/artcollab/tops",
-    "artcollab.contacts": "/artcollab/contacts",
+    // "artcollab.tops": "/artcollab/tops",
+    "artcollab.contact": "/artcollab/contact",
     "artcollab.detail": "/artcollab/detail",
   },
   features: {

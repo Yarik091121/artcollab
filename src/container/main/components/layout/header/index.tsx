@@ -22,7 +22,7 @@ const navigations: Array<{ name: string; href: string }> = [
   },
   {
     name: 'Контакты',
-    href: getNavigationValue('artcollab.contacts')
+    href: getNavigationValue('artcollab.contact')
   }
 ];
 
@@ -31,16 +31,14 @@ const Header = (): React.ReactElement => {
 
    const splitArray = (arr: any[]) => {
     const fLength = Math.ceil(arr.length);
-    return [arr.slice(1, fLength)];
+    return arr.slice(1, fLength);
   };
 
-  const [Nav] = splitArray(navigations);
+  const Nav = splitArray(navigations);
 
   return (
     <header className="header-wrapper">
-      {/* <div className="logo-container"> */}
         <Link onClick={() => forceUpdate()}  to={getNavigationValue('artcollab.main')}> <Logo /> </Link>
-      {/* </div> */}
       <div className="nav-bar">
         {Nav.map(({ name, href }) => (
           <div key={href} className="nav-item">

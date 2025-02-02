@@ -26,18 +26,18 @@ const CreateNFT = (): React.ReactElement => {
 
     return (
         <div className="create-nft-page-first">
-          <header className="App-header">
-            <div className="box">
-                <div className="input-field">
+          <header className="create-nft-header">
+            <div className="create-nft-box">
+                <div className="create-nft-input-field">
                     <input type="text" value={inputValue} onChange={handleChange} placeholder="Введите запрос на создание NFT&#10; (Обрабатывается AI GigaChat)" />
                     <button onClick={handleSubmit}>Отправить</button>
                 </div>
                 <p>{outputText}</p>
             </div>
-            <div className="box">
-                <div className="rectangle">
+            <div className="create-nft-box">
+                <div className="create-nft-rectangle">
                 <div className="content">
-                    <p>Здесь появится ваша картинка (когда-нибудь :'( )</p>
+                    Здесь появится ваша картинка (когда-нибудь :'( )
                 </div>
                 </div>
             </div>
