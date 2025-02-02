@@ -54,7 +54,6 @@ const MainPage = (): React.ReactElement => {
                     <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail')}>
                         <div className="main-invis-icon">
                             <div className='main-button'></div>
-                            {/* <div className='main-button'></div> */}
                             <div className='main-icons-wrapper'>
                                 <div className="main-icons">
                                     <img src={Caban} alt="Крутой кабан" className="main-nft-icon" />
