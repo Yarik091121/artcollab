@@ -1,6 +1,4 @@
 import React from 'react';
-import Heading from '../../components/heading';
-import { HeadingVariant } from '../../components/heading/types';
 import { useParams } from 'react-router-dom';
 
 import bibopPng from '../../assets/images/profile/Кабан.png';

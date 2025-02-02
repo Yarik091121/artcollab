@@ -10,7 +10,7 @@ import './index.css';
 import { Link } from 'react-router-dom';
 import { getNavigationValue } from '@brojs/cli';
 
-const MainPage: React.FC = () => {
+const MainPage = (): React.ReactElement => {
     const forceUpdate = React.useReducer(x => x + 1, 0)[1];
 
     return (

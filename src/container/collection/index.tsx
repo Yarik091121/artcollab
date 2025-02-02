@@ -1,8 +1,6 @@
 import React from 'react';
 
 import './index.css';
-import { Link } from 'react-router-dom';
-import { getNavigationValue } from '@brojs/cli';
 
 import PixelMen from '/src/assets/images/PixelMan.png';
 import HarmonyJapan from '/src/assets/images/HarmonyJapan.png';

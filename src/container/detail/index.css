@@ -4,12 +4,8 @@
 }
 
 .block-1 {
-    /* height: 100px; */
-    /* background: red; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly;
-    align-items: center; */
 }
 
 .biboppng {
