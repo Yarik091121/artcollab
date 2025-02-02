@@ -16,20 +16,16 @@
   }
   
   .App-header {
-    /* background-color: #282c34; */
-    /* min-height: 40%; */
     margin: 11% 3% 0 3%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     font-size: calc(10px + 40%);
     color: white;
   }
   
   .box {
-    /*  Stretching: */
     flex: 1 1 150px; 
     margin: 5px;
     gap: 5rem;
@@ -40,7 +36,6 @@
     justify-content: space-between;
     width: 100%;
     border: none;
-    margin-top: -43%;
   }
   
   .input-field input {
@@ -61,12 +56,6 @@
   
 .input-field button:hover {
     box-shadow: 0 0 20px  yellow;
-}
-
-@media (max-width: 600px) {
-  .input-field {
-    margin-top: -100%;
-  }
 }
 
   .rectangle {
