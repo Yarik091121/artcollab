@@ -7,7 +7,10 @@ const LogoStyled = styled.img`
   height: 57px;
   padding: 10px;
   border-radius: 5px;
-  margin: 20px 100px 20px 100px;   
+  position: relative;
+  left: -2%;
+  transform: translateX(0%);
+  // margin: 20px 50% 20px 20%;   
 `;
 
 const Logo = () => {
