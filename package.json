@@ -1,6 +1,6 @@
 {
     "name": "artcollab",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Project for SberHub (Kzn). Art space for users where they can share inspiration. ",
     "main": "./src/index.tsx",
     "scripts": {
