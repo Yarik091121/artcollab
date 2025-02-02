@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import { getNavigationValue } from '@brojs/cli';
 import Layout from './components/layout';
-import MainPage from './components/page';
+import MainPage from './components/main-page';
 import DetailPage from '../detail';
 import Promo from '../promo';
 import Collection from '../collection';

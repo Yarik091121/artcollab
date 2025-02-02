@@ -4,12 +4,21 @@
     font-family: 'TT Travels', sans-serif;
     display: flex;
     justify-content: center;
+    margin-top: 1%;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .nav-bar {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 3% 0 38%;
 }
 
 .nav-item {
