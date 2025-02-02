@@ -24,12 +24,6 @@ export const router = createBrowserRouter([
         element: <DetailPage />
       },
       {
-<<<<<<< HEAD
-        path: getNavigationValue('artcollab.promo'),
-        element: <Promo />
-      },
-      { path: '*', element: <h1>404</h1> }
-=======
         path: getNavigationValue('artcollab.collection'),
         element: <Collection />
       },
@@ -45,7 +39,6 @@ export const router = createBrowserRouter([
         path: '*', 
         element: <NotFoundPage /> 
       }
->>>>>>> origin/dev
     ]
   }
 ]);
