@@ -132,6 +132,11 @@
     align-items: center;
     width: 140px;
     height: 66px;
+    transition: all 300ms;
+}
+
+.main-button-galery:hover {
+    transform: translateY(-5px);
 }
 
 .main-text-about-nft {
