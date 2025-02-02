@@ -1,17 +1,13 @@
 import React from 'react';
-import Heading from '../../components/heading';
-import { HeadingVariant } from '../../components/heading/types';
 import { useParams } from 'react-router-dom';
 
 import bibopPng from '../../assets/images/profile/Кабан.png';
-import phonePng from '../../assets/images/profile/Зерно.png';
 import './index.css';
 
 const DetailPage = (): React.ReactElement => {
   const { id } = useParams();
   return (
     <div className="block">
-
       <div className="my-class"></div>
       <div className="block-1">
         <div className="icons"><img src={bibopPng} className="biboppng" /></div>
@@ -64,7 +60,6 @@ const DetailPage = (): React.ReactElement => {
           <button className = "button">Купить сейчас</button>
           <button className = "button">Предложить цену</button>
         </div>
-        
       </div> 
     </div>
   );
