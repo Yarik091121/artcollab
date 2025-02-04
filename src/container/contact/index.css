@@ -24,57 +24,48 @@
 .contact-rectangle {
     position: relative;
     top: 50px;
-    display: inline;
+    display: inline-block;
     width: 200px;
     height: 200px;
     border-radius: 10px;
     background: linear-gradient(to right top, #1EF1F1, #E3FF30);
     top: calc(50% + 100px);
+    overflow: hidden; /* Чтобы тень не выходила за пределы контейнера */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный переход для трансформации и тени */
 }
 
-.contact-img-1 {
+.contact-img-1, .contact-img-2 {
     position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    background-image: url('src/assets/images/Kaban.png');
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный переход для трансформации и тени */
+}
+.contact-img-1 {
+    background-image: url('src/assets/images/Kaban.png');
 }
 
 .contact-img-2 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
     background-image: url('src/assets/images/Hero.png');
-    background-size: cover;
-    background-position: center;
 }
 
-.contact-under-rect {
-    position: relative;
-    top: calc(200px + 10%);
-
-    font-size: 12px;
-
-    width: 200px;
-    height: 100px;
-    color: white;
-    border: 3px solid transparent;
+.contact-img-1:hover, .contact-img-2:hover, .contact-rectangle:hover {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+    box-shadow: 0 4px 20px #1ef1f197, 0 0 30px #e3ff3095; /* Градиентная тень */
 }
-
-
 .contact-border {
-    
     position: relative;
-    top: calc(200px + 10%);
-
+    top: 100; /* Измените это значение, если необходимо */
     font-size: 12px;
-
-    border: 3px solid transparent;
-    border-image: linear-gradient(to right top, #1EF1F1, #E3FF30);
-    border-image-slice: 1;
-    padding: 25px;
-    border-radius: 50px;
+    height: 80px;
+    display: flex; /* Используем flexbox для центрирования */
+    align-items: center; /* Вертикальное центрирование */
+    justify-content: center; /* Горизонтальное центрирование */
+    background: linear-gradient(#250229, #102a2c) padding-box, 
+                linear-gradient(to right top, #1EF1F1, #E3FF30) border-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-top: 160px; /* Добавьте отступ сверху, если нужно */
 }
