@@ -1,53 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { getNavigationValue } from '@brojs/cli';
-import Logo from '../logo/logo';
+import Logo from '../logo/logo';  
 
 import './index.css';
 
-// logo         ||           Коллекции   Создать nft   Контакты
+interface NavigationItem {
+  name: string;
+  href: string;
+}
 
-const navigations: Array<{ name: string; href: string }> = [
-  {
-    name: 'Главная страница',
-    href: getNavigationValue('artcollab.main')
+const navigationItems: NavigationItem[] = [
+  { 
+    name: 'Коллекции', 
+    href: getNavigationValue('artcollab.collection') 
   },
-  {
-    name: 'Коллекции',
-    href: getNavigationValue('artcollab.collection')
+  { 
+    name: 'Создать NFT', 
+    href: getNavigationValue('artcollab.create-nft') 
   },
-  {
-    name: 'Создать nft',
-    href: getNavigationValue('artcollab.create-nft')
+  { 
+    name: 'Контакты', 
+    href: getNavigationValue('artcollab.contact') 
   },
-  {
-    name: 'Контакты',
-    href: getNavigationValue('artcollab.contact')
-  }
 ];
 
 const Header = (): React.ReactElement => {
-  const forceUpdate = React.useReducer(x => x + 1, 0)[1];
-
-   const splitArray = (arr: any[]) => {
-    const fLength = Math.ceil(arr.length);
-    return arr.slice(1, fLength);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
-  const Nav = splitArray(navigations);
-
   return (
-    <header className="header-wrapper">
-        <Link onClick={() => forceUpdate()}  to={getNavigationValue('artcollab.main')}> <Logo /> </Link>
-      <div className="nav-bar">
-        {Nav.map(({ name, href }) => (
-          <div key={href} className="nav-item">
-            <Link onClick={() => forceUpdate()} to={href} className='header-link'>
-              {name}
-            </Link>
-          </div>
-        ))}
+    <header className="header-header">
+      <div className="header-logo">
+        <Link to={getNavigationValue('artcollab.main')}>
+          <Logo />
+        </Link>
       </div>
+
+      <button className="header-menu-toggle" onClick={toggleMenu}>
+          ☰
+      </button>
+
+      <nav className={`header-nav ${isMenuOpen ? 'header-nav--open' : ''}`}>
+        <ul className="header-nav__list">
+          {navigationItems.map((item) => (
+            <li key={item.name} className="header-nav__item">
+              <Link to={item.href} className="header-nav__link">
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 };
