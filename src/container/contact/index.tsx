@@ -11,7 +11,8 @@ const Contacts = (): React.ReactElement => {
                         <div className='contact-img-1'> </div>
                     </div>
                         <div className='contact-border'>
-                            <center>Подпись 1 </center>
+                            <center> Крылов Михаил </center>
+                            
                         </div>
                 </div>
                 {/* </div> */}
@@ -20,7 +21,7 @@ const Contacts = (): React.ReactElement => {
                         <div className='contact-img-2'> </div>
                     </div>
                         <div className='contact-border'>
-                            <center>Подпись 2 </center>
+                            <center> Сергеев Ярослав </center>
                         </div>
                 </div>
                 {/* </div> */}

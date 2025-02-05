@@ -61,11 +61,12 @@
     font-size: 12px;
     height: 80px;
     display: flex; /* Используем flexbox для центрирования */
-    align-items: center; /* Вертикальное центрирование */
+    align-items: flex-start; /* Вертикальное центрирование */
     justify-content: center; /* Горизонтальное центрирование */
     background: linear-gradient(#250229, #102a2c) padding-box, 
                 linear-gradient(to right top, #1EF1F1, #E3FF30) border-box;
     border: 2px solid transparent;
     border-radius: 5px;
+    padding: 5px;
     margin-top: 160px; /* Добавьте отступ сверху, если нужно */
 }
