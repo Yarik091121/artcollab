@@ -11,20 +11,22 @@ const Contacts = (): React.ReactElement => {
                         <div className='contact-img-1'> </div>
                     </div>
                         <div className='contact-border'>
-                            <center> Крылов Михаил </center>
-                            
+                            <div className='contact-name'> Крылов Михаил </div>
+                            <div className='contact-pos-right'> backend-dev + frontend-dev </div>
+                            <div className='contact-pos-left'> Комментарий: </div>
                         </div>
                 </div>
-                {/* </div> */}
                 <div>
                     <div className='contact-rectangle'>
                         <div className='contact-img-2'> </div>
                     </div>
                         <div className='contact-border'>
-                            <center> Сергеев Ярослав </center>
+                            <div className='contact-name'> Сергеев Ярослав </div>
+                            <div className='contact-pos-right'> frontend-dev </div>
+                            <div className='contact-pos-left'> Комментарий: </div>
+                            <div className='contact-pos-right'> Спаси и сохрани стенд... </div>
                         </div>
                 </div>
-                {/* </div> */}
             </div>
         </div>
     );

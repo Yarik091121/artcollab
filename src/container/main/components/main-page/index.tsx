@@ -27,14 +27,18 @@ const MainPage = (): React.ReactElement => {
                         </div>
                         <div className='main-two-buttoms'>
                             <div className="main-button-buy-nft-wrapper">
-                                <div className="main-button-buy-nft">
-                                    <span>Купить NFT</span>
-                                </div>
+                                <Link className='main-fix-link-buy' to={'*'}>
+                                    <div className="main-button-buy-nft">
+                                            <span>Купить NFT</span>
+                                    </div>
+                                </Link>
                             </div>
                             <div className="main-button-galery-wrapper">
-                                <div className="main-button-galery">
-                                    <span>Галерея</span>
-                                </div>
+                                <Link className='main-fix-link' to={getNavigationValue('artcollab.collection')}>
+                                    <div className="main-button-galery">
+                                            <span>Галерея</span>
+                                    </div>
+                                </Link>
                             </div>
                             <div className='main-text-about-nft'>
                                 <span>NFT, также уникальный токен - вид криптографических токенов, каждый <br></br>

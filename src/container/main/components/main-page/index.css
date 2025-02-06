@@ -260,3 +260,13 @@
     font-family: 'Times New Roman', Times, serif;
     color: #FFFFFF;
 }
+
+.main-fix-link {
+    text-decoration: none;
+    color: #29E8E8;
+}
+
+.main-fix-link-buy {
+    text-decoration: none;
+    color: black;
+}
