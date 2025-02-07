@@ -27,14 +27,18 @@ const MainPage = (): React.ReactElement => {
                         </div>
                         <div className='main-two-buttoms'>
                             <div className="main-button-buy-nft-wrapper">
-                                <div className="main-button-buy-nft">
-                                    <span>Купить NFT</span>
-                                </div>
+                                <Link className='main-fix-link-buy' to={'*'}>
+                                    <div className="main-button-buy-nft">
+                                            <span>Купить NFT</span>
+                                    </div>
+                                </Link>
                             </div>
                             <div className="main-button-galery-wrapper">
-                                <div className="main-button-galery">
-                                    <span>Галерея</span>
-                                </div>
+                                <Link className='main-fix-link' to={getNavigationValue('artcollab.collection')}>
+                                    <div className="main-button-galery">
+                                            <span>Галерея</span>
+                                    </div>
+                                </Link>
                             </div>
                             <div className='main-text-about-nft'>
                                 <span>NFT, также уникальный токен - вид криптографических токенов, каждый <br></br>
@@ -51,7 +55,7 @@ const MainPage = (): React.ReactElement => {
                 </div>
 
                 <div className='main-down-block'>
-                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail')}>
+                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail-kaban')}>
                         <div className="main-invis-icon">
                             <div className='main-button'></div>
                             <div className='main-icons-wrapper'>
@@ -61,14 +65,19 @@ const MainPage = (): React.ReactElement => {
                             </div>
                         </div>
                     </Link>
-                    <div className="main-invis-icon">
-                        <div className='main-button'></div>
-                        <div className="main-icons-wrapper">
-                            <div className="main-icons">
-                                <img src={Monkey} alt="Крутая обезъяна" className="main-nft-icon" />
+                    
+                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail-monkey')}>
+                        <div className="main-invis-icon">
+                            <div className='main-button'></div>
+                            <div className="main-icons-wrapper">
+                                <div className="main-icons">
+                                    <img src={Monkey} alt="Крутая обезъяна" className="main-nft-icon" />
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
+
+                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail-hero')}>
                     <div className="main-invis-icon">
                         <div className='main-button'></div>
                         <div className="main-icons-wrapper">
@@ -77,6 +86,7 @@ const MainPage = (): React.ReactElement => {
                             </div>
                         </div>
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>
