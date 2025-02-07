@@ -9,7 +9,8 @@
         "build": "npm run clean && brojs build --dev",
         "build:prod": "npm run clean && brojs build",
         "clean": "rimraf dist",
-        "eslint": "npx eslint"
+        "eslint": "npx eslint",
+        "lint": ""
     },
     "repository": {
         "type": "git",
