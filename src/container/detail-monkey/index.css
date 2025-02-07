@@ -10,11 +10,11 @@
     margin: 10px 100px 0;
 }
 
-.detail-biboppng {
+.detail-monkeypng {
     width: 340px;
     height: 350px;
     border-radius: 10px;
-    background-image: url('src/assets/images/Kaban.png');
+    background-image: url('src/assets/images/Monkey.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

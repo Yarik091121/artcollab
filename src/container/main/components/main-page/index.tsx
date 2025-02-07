@@ -55,7 +55,7 @@ const MainPage = (): React.ReactElement => {
                 </div>
 
                 <div className='main-down-block'>
-                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail')}>
+                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail-kaban')}>
                         <div className="main-invis-icon">
                             <div className='main-button'></div>
                             <div className='main-icons-wrapper'>
@@ -65,14 +65,19 @@ const MainPage = (): React.ReactElement => {
                             </div>
                         </div>
                     </Link>
-                    <div className="main-invis-icon">
-                        <div className='main-button'></div>
-                        <div className="main-icons-wrapper">
-                            <div className="main-icons">
-                                <img src={Monkey} alt="Крутая обезъяна" className="main-nft-icon" />
+                    
+                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail-monkey')}>
+                        <div className="main-invis-icon">
+                            <div className='main-button'></div>
+                            <div className="main-icons-wrapper">
+                                <div className="main-icons">
+                                    <img src={Monkey} alt="Крутая обезъяна" className="main-nft-icon" />
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
+
+                    <Link onClick={() => forceUpdate()} to={getNavigationValue('artcollab.detail-hero')}>
                     <div className="main-invis-icon">
                         <div className='main-button'></div>
                         <div className="main-icons-wrapper">
@@ -81,6 +86,7 @@ const MainPage = (): React.ReactElement => {
                             </div>
                         </div>
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>
