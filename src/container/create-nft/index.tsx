@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './index.css';
+import { getConfigValue } from '@brojs/cli';
 
 const CreateNFT = (): React.ReactElement => {
   const [inputValue, setInputValue] = useState('');
@@ -29,7 +30,7 @@ const CreateNFT = (): React.ReactElement => {
     setLoading(true);
     try {
       const response = await axios.get(
-        'http://localhost:8000/gigachat/prompt?prompt=' + encodeURIComponent(inputValue),
+        getConfigValue('artcollab.api') + '/gigachat/prompt?prompt=' + encodeURIComponent(inputValue),
         {
           responseType: 'blob',  // Ждем ответ в виде Blob (изображение)
         }
