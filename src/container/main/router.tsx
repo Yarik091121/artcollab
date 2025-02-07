@@ -3,8 +3,10 @@ import { createBrowserRouter } from 'react-router-dom';
 import { getNavigationValue } from '@brojs/cli';
 import Layout from './components/layout';
 import MainPage from './components/main-page';
-import DetailPage from '../detail';
-import Promo from '../promo';
+import DetailPageKab from '../detail-kaban';
+import DetailPageMonk from '../detail-monkey';
+import DetailPageHero from '../detail-hero';
+// import Promo from '../promo';
 import Collection from '../collection';
 import CreateNFT from '../create-nft';
 import Contacts from '../contact';
@@ -20,8 +22,16 @@ export const router = createBrowserRouter([
         element: <MainPage />
       },
       {
-        path: getNavigationValue('artcollab.detail'),
-        element: <DetailPage />
+        path: getNavigationValue('artcollab.detail-kaban'),
+        element: <DetailPageKab />
+      },
+      {
+        path: getNavigationValue('artcollab.detail-monkey'),
+        element: <DetailPageMonk />
+      },
+      {
+        path: getNavigationValue('artcollab.detail-hero'),
+        element: <DetailPageHero />
       },
       {
         path: getNavigationValue('artcollab.collection'),

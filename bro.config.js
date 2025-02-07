@@ -13,7 +13,9 @@ module.exports = {
     "artcollab.collection": "/artcollab/collection",
     "artcollab.create-nft": "/artcollab/create-nft",
     "artcollab.contact": "/artcollab/contact",
-    "artcollab.detail": "/artcollab/detail",
+    "artcollab.detail-kaban": "/artcollab/detail-kaban",
+    "artcollab.detail-monkey": "/artcollab/detail-monkey",
+    "artcollab.detail-hero": "/artcollab/detail-hero",
   },
   features: {
     "artcollab": {
