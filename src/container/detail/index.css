@@ -1,28 +1,35 @@
-.block {
+.detail-block {
     display: flex;
+    justify-content: center;
     font-family: "TT Travels", sans-serif;
 }
 
-.block-1 {
+.detail-block-1 {
     display: flex;
     flex-direction: column;
+    margin: 10px 100px 0;
 }
 
-.biboppng {
-    width: 522px;
-    height: 545px;
+.detail-biboppng {
+    width: 340px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url('src/assets/images/Kaban.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.icons {
-    margin: 0px 100px 20px;
+.detail-icons {
+    margin: 0px 0 10px;
     position: relative;
-    width: 522px;
-    height: 545px;
+    width: 340px;
+    height: 350px;
     background: linear-gradient(to right top, #1EF1F1, #E3FF30);
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
-.my-class {
+.detail-my-class {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,94 +40,104 @@
     z-index: -1;
 }
 
-.details {
-    width: 496px;
-    height: 214px;
+.detail-details {
+    width: 340px;
+    height: 140px;
     color: white;
     border: 3px solid #C6DB3F;
-    border-radius: 20px;
-    margin: 60px 115px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-top: 5px;
 }
 
-.detail {
-    font-size: 35px;
+.detail-detail {
+    font-size: 20px;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 5px;
 }
 
-.string {
+.detail-string {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.padd {
-    font-size: 23px;
-    margin: 5px;
+.detail-padd {
+    font-size: 15px;
+    margin: 3px 10px;
 }
 
-.block-2 {
+.detail-block-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.profile-description {
+.detail-profile-description {
     width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
-    margin: 30px 120px;
+    margin: 5px 60px;
 }
 
-.cyberpunk {
-    color: #FFE72F;
-    font-size: 35px;
+.detail-cyberpunk {
+    color: #E3FF30;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 19px;
 }
 
-.bibop {
+.detail-bibop {
     display: flex;
     justify-content: space-evenly;
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.price {
-    font-size: 35px;
+.detail-price {
+    position: relative;
+    bottom: -10px;
+    font-size: 17px;
 }
 
-.table {
-    font-size: 35px;
+.detail-table {
+    font-size: 17px;
     margin-top: 30px;
 }
 
-.table th, .table td {
+.detail-table th, .table td {
     text-align: left;
 }
 
-.table th {
+.detail-table th {
     border-bottom: 1px solid #C6DB3F;
 }
 
-.table td {
-    padding-top: 25px;
+.detail-table td {
+    padding-top: 12px;
 }
 
-.buttons {
+.detail-buttons {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.button {
-    width: 404px;
-    height: 78px;
+.detail-button {
+    width: 322px;
+    height: 42px;
     background-color: #c6db40;
-    font-size: 46px;
-    margin-top: 120px;
-    transition: all 100ms;
+    font-size: 20px;
+    margin: 120px 10px 0;
+    transition: all 0.3s;
     cursor: pointer;
 }
 
-.button:hover {
-    box-shadow: #c6db40 0px 0px 110px 23px;
+.detail-button:hover {
+    transform: translateY(-2px);
+    scale: 1.05;
+    box-shadow: #c6db40 0px 0px 40px 6px;
 }

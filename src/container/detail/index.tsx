@@ -7,38 +7,40 @@ import './index.css';
 const DetailPage = (): React.ReactElement => {
   const { id } = useParams();
   return (
-    <div className="block">
-      <div className="my-class"></div>
-      <div className="block-1">
-        <div className="icons"><img src={bibopPng} className="biboppng" /></div>
-        <div className="details">
-          <div className="detail">Детали</div>
-          <div className="string">
-            <div className="padd">Создатель:</div>
-            <div className="padd">Cheburasha</div>
+    <div className="detail-block">
+      <div className="detail-my-class"></div>
+      <div className="detail-block-1">
+        <div className="detail-icons">
+          <img src={bibopPng} className="detail-biboppng" />
           </div>
-          <div className="string">
-            <div className="padd">Владелец:</div>
-            <div className="padd">Krok Gena</div>
+        <div className="detail-details">
+          <div className="detail-detail">Детали</div>
+          <div className="detail-string">
+            <div className="detail-padd">Создатель:</div>
+            <div className="detail-padd">Cheburasha</div>
           </div>
-          <div className="string">
-            <div className="padd">Сеть:</div>
-            <div className="padd">BNB Chain</div>
+          <div className="detail-string">
+            <div className="detail-padd">Владелец:</div>
+            <div className="detail-padd">Krok Gena</div>
           </div>
-          <div className="string">
-            <div className="padd">ID токена:</div>
-            <div className="padd">1300000000805</div>
+          <div className="detail-string">
+            <div className="detail-padd">Сеть:</div>
+            <div className="detail-padd">BNB Chain</div>
+          </div>
+          <div className="detail-string">
+            <div className="detail-padd">ID токена:</div>
+            <div className="detail-padd">1300000000805</div>
           </div>
         </div>
       </div>
-      <div className="block-2">
-        <div className="profile-description">
-          <div className="cyberpunk">Cyberpunk edition</div>
-          <div className="bibop">Gold Rapper Bibop</div>
-          <div className="price">Цена:</div>
-          <div className="bibop">15 USDT</div>
-          <div className="price">Предложения:</div>
-          <table className="table">
+      <div className="detail-block-2">
+        <div className="detail-profile-description">
+          <div className="detail-cyberpunk">Cyberpunk edition</div>
+          <div className="detail-bibop">Gold Rapper Bibop</div>
+          <div className="detail-price">Цена:</div>
+          <div className="detail-bibop">15 &#8381;</div>
+          <div className="detail-price">Предложения</div>
+          <table className="detail-table">
             <tr>
               <th>Из</th>
               <th>Срок действия</th>
@@ -47,18 +49,18 @@ const DetailPage = (): React.ReactElement => {
             <tr>
               <td>Crypto_life45</td>
               <td>In 3 Days</td>
-              <td>1.5 USDT</td>
+              <td>1.5 &#8381;</td>
             </tr>
             <tr>
               <td>Paradise</td>
               <td>In 1 Days</td>
-              <td>1.53 USDT</td>
+              <td>1.53 &#8381;</td>
             </tr>
           </table>
         </div>
-        <div className="buttons">
-          <button className = "button">Купить сейчас</button>
-          <button className = "button">Предложить цену</button>
+        <div className="detail-buttons">
+          <button className = "detail-button">Купить сейчас</button>
+          <button className = "detail-button">Предложить цену</button>
         </div>
       </div> 
     </div>
