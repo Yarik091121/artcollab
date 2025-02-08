@@ -46,13 +46,16 @@ const Header = (): React.ReactElement => {
 
       <nav className={`header-nav ${isMenuOpen ? 'header-nav--open' : ''}`}>
         <ul className="header-nav__list">
-          {navigationItems.map((item) => (
+        
+        {navigationItems.map((item) => (
+          item.href ? (
             <li key={item.name} className="header-nav__item">
               <Link to={item.href} className="header-nav__link">
                 {item.name}
               </Link>
             </li>
-          ))}
+          ) : null
+        ))}
         </ul>
       </nav>
     </header>
