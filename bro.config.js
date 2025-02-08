@@ -23,6 +23,6 @@ module.exports = {
     },
   },
   config: {
-    "artcollab.api": "/api",
+    "artcollab.api": "http://localhost:8000",
   },
 };
